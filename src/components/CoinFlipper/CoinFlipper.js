@@ -55,7 +55,7 @@ class CoinFlipper extends Component {
     return (
       <div className="CoinFlipper">
         <h2> Flip a coin! </h2>
-        <div>{this.state.currCoin && <Coin info={this.state.currCoin} />}</div>
+        {this.state.currCoin && <Coin info={this.state.currCoin} />}
         <button onClick={this.handleClick}> Flip it! </button>
         <p>
           {" "}
